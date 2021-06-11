@@ -1,8 +1,10 @@
 function registration() {
     var name = document.getElementById("name").value;
     var email= document.getElementById("email").value;
-    var phone= document.getElementById("phone").value;
-    var address= document.getElementById("address").value;
+    var phone = document.getElementById("phone").value;
+    var male = document.getElementById("male").value;
+    var female = document.getElementById("female").value;
+    var address = document.getElementById("address").value;
     var pass1 = document.getElementById("pass1").value;
     var pass2= document.getElementById("pass2").value;
  //email id
@@ -27,6 +29,23 @@ function registration() {
     {
         alert('Invalid email');
     }
+    if(male=='')
+    {
+        alert('Please enter your Gender');
+    }
+    else if(!letters.test(male))
+    {
+        alert('Invalid input');
+    }
+    if(female=='')
+    {
+        alert('Please enter your Gender');
+    }
+    else if(!letters.test(female))
+    {
+        alert('Invalid input');
+    }
+
 
     else if(phone=='')
     {
